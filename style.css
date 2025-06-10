@@ -280,15 +280,18 @@ form input {
     gap: 10px;
     align-items: flex-start;
 }
+/* Encontre este seletor e substitua o bloco todo */
 .avatar {
-    width: 40px;
-    height: 40px;
+    width: 44px; /* ALTERADO: Aumentamos o tamanho total (era 40px) */
+    height: 44px; /* ALTERADO: Aumentamos o tamanho total (era 40px) */
     border-radius: 50%;
     background-color: #E0E0E0;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    font-size: 18px; /* NOVO: Definimos um tamanho para a letra, resolvendo o "espremido" */
+    flex-shrink: 0; /* NOVO: Impede que o avatar encolha caso falte espaço */
 }
 .message-content {
     background-color: #F1F1F1;
@@ -394,4 +397,33 @@ form input {
     font-weight: bold;
     margin-top: 10px;
     display: block;
+}
+/* --- ESTILOS PARA RESPONSIVIDADE (CELULAR E TABLET) --- */
+
+@media (max-width: 768px) {
+
+    .login-container {
+        /* Empilha os itens um sobre o outro em vez de lado a lado */
+        flex-direction: column;
+        min-height: 100vh;
+        padding-top: 40px; /* Adiciona um espaço no topo */
+    }
+
+    .welcome-section {
+        padding: 20px;
+        text-align: center; /* Centraliza o texto de boas-vindas */
+    }
+
+    .login-section {
+        /* Remove a linha vertical e adiciona uma linha horizontal no topo */
+        border-left: none;
+        border-top: 1px solid var(--border-color);
+        padding: 40px 20px; /* Ajusta o espaçamento para telas menores */
+        width: 100%; /* Faz a seção de login ocupar a largura toda */
+        box-sizing: border-box; /* Garante que o padding não estoure a largura */
+    }
+
+    .welcome-section h1 {
+        font-size: 2.5rem; /* Diminui um pouco o título */
+    }
 }
