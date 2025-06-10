@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-background">
+    <div class="app-container">
+        <h1 class="page-title">Dados</h1>
+        <form id="dataForm">
+            <div class="input-group">
+                <label>Quantos cigarros você fumava por dia?</label>
+                <input type="number" placeholder="Resposta" required>
+            </div>
+            <div class="input-group">
+                <label>Quanto custa um maço de cigarro?</label>
+                <input type="text" placeholder="Resposta" required>
+            </div>
+            <div class="input-group">
+                <label>Quantos cigarros vêm em um maço?</label>
+                <input type="number" placeholder="Resposta" required>
+            </div>
+            <div class="input-group">
+                <label>Está há quantos dias sem fumar?</label>
+                <input type="number" placeholder="Ex: 0, 7, 30..." required>
+            </div>
+            <button type="submit" class="btn-save">Salvar e Ver Progresso</button>
+            <div id="feedback-container"></div>
+        </form>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>

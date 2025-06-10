@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-background-light">
+    <div class="app-container">
+        <div class="header">
+             <a href="conquistas.html" class="back-arrow">&lt;</a>
+             <h1 class="page-title">Comunidade</h1>
+             <span style="width: 2rem;"></span>
+        </div>
+        
+        <div class="community-tabs">
+            <button class="tab-link active" data-target="chatContent">Chat</button>
+            <button class="tab-link" data-target="mencoesContent">Mencões</button>
+            <button class="tab-link" data-target="amigosContent">Amigos</button>
+        </div>
+
+        <div id="chatContent" class="tab-content active">
+            <div class="chat-window">
+                <div class="chat-message">
+                    <div class="avatar" style="background-color: #EF5350; color: white;">J</div>
+                    <div class="message-content">
+                        <strong>João</strong>
+                        <p>Nossa, desde 13 de agosto que não me interesso em fumar.</p>
+                    </div>
+                </div>
+                <div class="chat-message">
+                    <div class="avatar" style="background-color: #7E57C2; color: white;">M</div>
+                    <div class="message-content">
+                        <strong>Márcia</strong>
+                        <p>Que legal, João! Parabéns! Vamos nessa jornada juntos.</p>
+                    </div>
+                </div>
+                <div class="chat-message">
+                    <div class="avatar" style="background-color: #42A5F5; color: white;">B</div>
+                    <div class="message-content">
+                        <strong>Breno</strong>
+                        <p>Rapaz! Cê é bravo igual ao Neymar. Estou orgulhoso.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="message-input-area">
+                <input type="text" placeholder="Digite sua mensagem...">
+                <button>Enviar</button>
+            </div>
+        </div>
+
+        <div id="mencoesContent" class="tab-content" style="display: none;">
+            <div class="chat-window">
+                <div class="chat-message">
+                    <div class="avatar" style="background-color: #66BB6A; color: white;">C</div>
+                    <div class="message-content">
+                        <strong>Carlos</strong>
+                        <p>Parabéns pela sua jornada, <b id="mentionName">@Você</b>! Continue firme no propósito!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="amigosContent" class="tab-content" style="display: none;">
+            <ul class="friend-list">
+                <li class="friend-item">
+                    <div class="avatar" style="background-color: #42A5F5; color: white;">B</div>
+                    <span class="friend-name">Breno</span>
+                </li>
+                <li class="friend-item">
+                    <div class="avatar" style="background-color: #66BB6A; color: white;">C</div>
+                    <span class="friend-name">Carlos</span>
+                </li>
+                <li class="friend-item">
+                    <div class="avatar" style="background-color: #EF5350; color: white;">J</div>
+                    <span class="friend-name">João</span>
+                </li>
+                <li class="friend-item">
+                    <div class="avatar" style="background-color: #7E57C2; color: white;">M</div>
+                    <span class="friend-name">Márcia</span>
+                </li>
+            </ul>
+            <button id="addFriendBtn" class="btn-add-friend">
+                <i class="fa-solid fa-plus"></i> Adicionar Amigos
+            </button>
+        </div>
+    </div>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="recovery-container">
+        <h2>Criar Conta</h2>
+        <p>Preencha seus dados para começar sua jornada.</p>
+        <form id="cadastroForm">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" required>
+
+            <label for="email-cadastro">E-mail</label>
+            <input type="email" id="email-cadastro" required>
+
+            <label for="senha-cadastro">Senha</label>
+            <input type="password" id="senha-cadastro" required>
+            
+            <label for="confirmar-senha">Confirmar Senha</label>
+            <input type="password" id="confirmar-senha" required>
+
+            <button type="submit" class="btn-primary">CADASTRAR</button>
+            <a href="index.html" class="back-to-login">Já tenho uma conta</a>
+        </form>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
